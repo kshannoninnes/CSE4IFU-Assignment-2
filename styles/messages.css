@@ -1,0 +1,33 @@
+.error-message {
+    height: 20px;
+
+    color: red;
+}
+
+#sign-in-success-message {
+    color: rgb(var(--secondary-color));
+
+    font-size: 40px;
+}
+
+#registration-success-message {
+    margin-top: 5%;
+
+    color: rgb(var(--secondary-color));
+    
+    font-size: 30px;
+}
+
+#sign-in-success-image {
+    height: 500px;
+    width: auto;
+}
+
+#registration-success-image {
+    height: 250px;
+    width: auto;
+}
+
+#user-credentials-success div + div {
+    margin-top: 20px;
+}

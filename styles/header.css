@@ -1,0 +1,75 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    height: var(--header-height);
+    width: 100%;
+
+    background-color: rgb(var(--primary-color));
+    color: rgb(var(--light-font-color));
+}
+
+#page-name {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    
+    font-family: var(--regular-font);
+    font-size: 24px;
+}
+
+#page-name a {
+    color: rgb(var(--light-font-color));
+}
+
+#page-name h2 {
+    max-width: 500px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#nav-bar {
+    justify-self: center;
+    display: flex;
+    
+    height: 100%;
+    min-width: fit-content;
+
+    list-style-type: none;
+}
+
+#filler { /* Adds some extra spacing on the right of the nav bar */
+    flex-grow: 1;
+}
+
+.nav-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    height: 100%;
+    
+    font-size: 18px;
+}
+
+.nav-button a:hover {
+    background-color: rgb(var(--accent-color));
+}
+
+.unhighlighted a { 
+    color: rgb(var(--light-font-color));
+}
+
+.highlighted a {
+    color: rgb(var(--light-font-color));
+    background-color: rgb(var(--accent-color));
+}

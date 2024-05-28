@@ -1,0 +1,106 @@
+/* All styles in all stylesheets should obey the following order, where possible:
+ * Positioning
+ * Size
+ * Color
+ * Font
+ * Extra
+ */
+
+/* Common Styling */
+@import 'header.css';
+@import 'footer.css';
+@import 'user-credential-forms.css';
+@import 'table.css';
+@import 'create-section-forms.css';
+@import 'messages.css';
+
+/* Page-Specific Styling */
+@import 'topics.css';
+@import 'forum.css';
+@import 'homepage.css';
+
+/* Fonts */
+@font-face {
+    font-family: 'FuturaTS-ExtraLight';
+    src: url('../fonts/FuturaTS-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaTS-Light';
+    src: url('../fonts/FuturaTS-Light.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaTS-Medium';
+    src: url('../fonts/FuturaTS-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaTS-DemiBold';
+    src: url('../fonts/FuturaTS-DemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaTS-ExtraBold';
+    src: url('../fonts/FuturaTS-ExtraBold.ttf');
+}
+
+/* Reset CSS */
+* { margin:0; padding:0; box-sizing: border-box;}
+
+/* Define constants */
+:root {
+    /* Using rgb versions of the color scheme to work with opacity
+     * verified using https://www.rapidtables.com/convert/color/hex-to-rgb.html
+     *
+     * primary-color: #071E22 -> rgb(7, 30, 34)
+     * secondary-color: #1D7874 -> rgb(29, 120, 116)
+     * tertiary-color: #679289 -> rgb(103, 146, 137)
+     * quaternary-color: #F4C095 -> rgb(244, 192, 149)
+     * accent-color: #EE2E31 -> rgb(238, 46, 49)
+     */
+
+    --primary-color: 7, 30, 34;
+    --secondary-color: 29, 120, 116;
+    --tertiary-color: 103, 146, 137;
+    --quaternary-color: 244, 192, 149;
+    --accent-color: 238, 46, 49;
+
+    --background-color: 248, 249, 250;
+
+    --dark-font-color: rgb(var(--primary-color));
+    --light-font-color: 255, 255, 255;
+    
+    --extra-light-font: 'FuturaTS-ExtraLight';
+    --light-font: 'FuturaTS-Light';
+    --regular-font: 'FuturaTS-Medium';
+    --bold-font: 'FuturaTS-DemiBold';
+    --extra-bold-font: 'FuturaTS-ExtraBold';
+
+    --header-height: 54px;
+    --footer-height: calc(var(--header-height) / 2);
+}
+
+/* Common styling throughout website */
+html, body {
+    color: rgb(var(--dark-font-color));
+    background-color: rgb(var(--background-color));
+
+    font-family: var(--regular-font);    
+}
+
+.main-content {          
+    display: flex;
+
+    min-height: calc(100dvh - var(--header-height) - var(--footer-height)); /* Fill viewport, minus the header and footer heights */
+}
+
+.centered-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,79 @@
+#post-user-header {
+    padding-left: 8px;
+    
+    width: 25%;
+}
+
+#post-name-header {
+    padding-left: 8px;
+    width: 50%;
+}
+
+#post-date-header {
+    text-align: center;
+    width: 20%;
+}
+
+#post-likes-header {
+    text-align: center;
+    width: 5%;
+}
+
+.post-user {
+    padding-top: 5px;
+    padding-left: 8px;
+
+    height: 100%;
+}
+
+.post-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.post {
+    padding: 5px;
+    text-align: left;
+    min-height: 35px;
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 14px;
+}
+
+.half-border {
+    width: 98%;
+    height: 1px;
+    border-bottom: 1px solid rgba(var(--secondary-color), 0.1);
+}
+
+.tag_display {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    
+    height: 100%;
+    width: 100%;
+
+    color: rgba(var(--primary-color), 0.65);
+
+    font-size: 10px;
+}
+
+.post-date {
+    text-align: center;
+}
+
+.post-likes {
+    text-align: center;
+    padding-right: 6px; /* For some reason, text-align: center is not EXACTLY centered, this fixes that. */
+}
+
+.like-button {
+    height: 13px;
+    width: 13px;
+}

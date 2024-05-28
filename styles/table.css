@@ -1,0 +1,128 @@
+.table-positioning {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: fit-content;
+    width: 60%;
+}
+
+.above-table-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    min-height: 20px;
+}
+
+#return-to-topics-link {
+    text-align: left;
+
+    color: rgb(var(--accent-color));
+
+    font-family: var(--bold-font);
+}
+
+.table-background {   
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(var(--secondary-color), 0.05);
+}
+
+.main-table {
+    height: 1px; /* This height setting is ignored when constructing the table, but allows for height: 100% on child divs */
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.main-table a {
+    color: rgb(var(--primary-color));
+}
+
+.main-table th {
+    text-align: left;
+    padding-left: 5px;
+
+    height: 40px;
+
+    color: rgb(var(--light-font-color));
+    background-color: rgba(var(--primary-color), 0.95); /* For some reason the header/footer look lighter than they are, so this is to adjust to them */
+
+    font-family: var(--extra-light-font);
+    font-size: 24px;
+
+    border-bottom: 1pt solid rgba(var(--tertiary-color), 0.2);
+}
+
+.main-table th a {
+    display: block;
+    color: rgb(var(--light-font-color));
+}
+
+.main-table th + th, td + td {
+    border-left: 1px solid rgba(var(--tertiary-color), 0.2);
+}
+
+.main-table td {    
+    font-size:16px;
+}
+
+.main-table tr:not(:first-child) {
+    vertical-align: middle;
+    padding-bottom: 5px;
+
+    height: 50px;
+
+    border-top: 1pt solid rgba(var(--tertiary-color), 0.2);
+}
+
+.pager-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3px;
+    padding-right: 1px;
+    
+    height: 25px;
+    width: 25px;
+
+    color: rgb(var(--accent-color));
+
+    font-family: var(--bold-font);
+    font-size: 16px;
+    text-decoration: none;
+
+    border: 1px solid black;
+}
+
+.pager-section a + p {
+    margin-left: 14px;
+}
+
+.pager-section p + a {
+    margin-left: 14px;
+}
+
+.pager-section {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex: 1;
+
+    height: 25px;
+    
+    font-size: 14px;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+
+    color: lightgray;
+    border: 1px solid lightgray;
+}

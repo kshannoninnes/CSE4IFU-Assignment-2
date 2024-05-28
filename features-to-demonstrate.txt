@@ -1,0 +1,24 @@
+
+If the cookieUser is set to a username that does not exist in the database, an appropriate error is thrown when trying to create a post or topic
+
+If an invalid topic name is inserted into the url manually, redirect back to topics page with error message
+
+Appropriate user input field is auto focused on page load (eg. can start typing immediately when loading topics or posts pages)
+
+Topic/Forum pages stay on the most recent posts when creating more posts than displayed
+
+Topic/Forum pages stay on the currently selected page when sorting columns (and the sort applies to all table rows, not just the 5/10 displayed)
+
+Next/Prev in Topics and Forum buttons are disabled when reaching the min or max page
+
+Pager displayed page counts increase/decrease dynamically
+
+Sign Up Now button on homepage CTA only displays if not logged in already
+
+Header truncates text when inside a topic with a long name
+
+
+
+
+I think some error message positioning could have been better (eg. auto redirect on invalid topic name) but it is what it is
+Would have liked to move more code into their own files (eg. checking if user logged in) but had to move on to other assignments

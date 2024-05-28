@@ -1,0 +1,40 @@
+#created-by-user-header {
+    padding-left: 8px;
+    width: 25%;
+}
+
+#topic-name-header {
+    padding-left: 8px;
+    width: 50%;
+}
+
+#date-created-header {
+    text-align: center;
+    width: 25%;
+}
+
+.topic-user {
+    padding-left: 8px;
+}
+
+.topic-name {
+    padding-left: 8px;
+}
+
+.topic-date {
+    text-align: center;
+}
+
+.topic-name-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic-post-count {
+    display: flex;
+    padding-right: 5px;
+}
+
+.post-count-img {
+    transform: scale(0.8);
+}
